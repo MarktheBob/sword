@@ -1,31 +1,31 @@
 /*Declaring various font families*/
 @font-face {
     font-family: "creepy";
-    src: url(/fonts/creepy.ttf);
+    src: url(/../sword/fonts/creepy.ttf);
 }
 @font-face {
     font-family: "handwrite";
-    src: url(/fonts/handwrite.ttf);
+    src: url(/../sword/fonts/handwrite.ttf);
 }
 @font-face {
     font-family: "normaltext";
-    src: url(/fonts/normaltext.ttf);
+    src: url(/../sword/fonts/normaltext.ttf);
 }
 @font-face {
     font-family: "normaltitle";
-    src: url(/fonts/normaltitle.ttf);
+    src: url(/../sword/fonts/normaltitle.ttf);
 }
 @font-face {
     font-family: "nostalgia";
-    src: url(/fonts/nostalgia.ttf);
+    src: url(/../sword/fonts/nostalgia.ttf);
 }
 @font-face {
     font-family: "nostyle";
-    src: url(/fonts/nostyle.ttf);
+    src: url(/../sword/fonts/nostyle.ttf);
 }
 @font-face {
     font-family: "why";
-    src: url(/fonts/why.ttf);
+    src: url(/../sword/fonts/why.ttf);
 }
 
 /*General styling*/
