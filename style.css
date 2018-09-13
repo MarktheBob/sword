@@ -9,11 +9,11 @@
 }
 @font-face {
     font-family: "normaltext";
-    src: url(sword/fonts/normaltext.ttf);
+    src: url(../sword/fonts/normaltext.ttf);
 }
 @font-face {
     font-family: "normaltitle";
-    src: url(sword/fonts/normaltitle.ttf);
+    src: url(../sword/fonts/normaltitle.ttf);
 }
 @font-face {
     font-family: "nostalgia";
