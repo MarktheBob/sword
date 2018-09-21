@@ -98,3 +98,13 @@ button{
     background: transparent;
     color: white;
 }
+
+footer{
+    width: 90%;
+    /*background-color: #222222;*/
+    padding: 0.5em;
+}
+
+footer p{
+    text-align: center !important;
+}
