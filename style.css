@@ -86,5 +86,15 @@ img{
 }
 
 .forinline{
-    display: inline;
+    display: block;
+}
+
+textarea{
+    height: 2em;
+    width: 30%;
+}
+
+button{
+    background: transparent;
+    color: white;
 }
