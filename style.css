@@ -67,7 +67,6 @@ h2{
 a{
     color: inherit;
     text-decoration: inherit;
-    
 }
 
 nav{
@@ -81,7 +80,11 @@ nav p {
     font-family: "normaltitle";
 }
 
-.inlineLink {
+nav p a{
+    text-decoration: none !important;
+}
+
+p a{
     text-decoration: underline;
 }
 
@@ -89,16 +92,13 @@ img{
     max-width: 100%;
 }
 
-.forinline{
-    display: block;
-}
-
 textarea{
     max-height: 2em;
     max-width: 30%;
-    height: 2em;
+    height: 1.6em;
     width: 30%;
     display: block;
+    font-size: 1.5em;
 }
 
 button{
@@ -119,7 +119,6 @@ i{
     text-decoration: none;
     font-size: 2em;
     margin: 0.2em 0.5em 0.2em 0.5em;
-    text-align: center;
 }
 
 /*Grid styling*/
@@ -185,6 +184,6 @@ main{
 #comments{
     max-width: 40%;
     max-height: 10%;
-    height: 10%;
+    height: 4em !important;
     width: 40%;
 }
