@@ -30,6 +30,10 @@
 
 /*General styling*/
 
+html{
+    height: 100%;
+}
+
 p, h2, h3, button, li, td{
     font-family: "normaltext";
     font-weight: 400;
@@ -40,8 +44,7 @@ body{
     background-color: black;
     background: url(images/bg.jpg) no-repeat center center fixed;
     background-size: cover;
-    height: 100%;
-    
+    min-height: 100%;
 }
 
 p{
@@ -83,7 +86,7 @@ nav p {
 }
 
 img{
-    width: 20%;
+    max-width: 100%;
 }
 
 .forinline{
@@ -91,8 +94,11 @@ img{
 }
 
 textarea{
+    max-height: 2em;
+    max-width: 30%;
     height: 2em;
     width: 30%;
+    display: block;
 }
 
 button{
@@ -101,11 +107,7 @@ button{
 }
 
 footer{
-    width: 90%;
-    /*background-color: #222222;*/
-    padding: 0.5em;
-    display: flex;
-    align-content: flex-end;
+    max-width: 90%;
 }
 
 footer p{
@@ -118,4 +120,71 @@ i{
     font-size: 2em;
     margin: 0.2em 0.5em 0.2em 0.5em;
     text-align: center;
+}
+
+/*Grid styling*/
+
+body{
+    display: grid;
+    grid-template-rows: 38% 60% 2%;
+    grid-template-columns: 100%;
+    margin: 0px 2% 0px 2%;
+}
+
+header{
+    grid-row: 1 / 2;
+}
+
+main{
+    grid-row: 2 / 3;
+}
+
+footer{
+    grid-row: 3 / 4;
+}
+
+/*Probably will not stay as a flex when jquery is added.*/
+
+main{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.hist{
+    max-width: 27%;
+    margin: 0.2em 6% 0em 0em;
+}
+
+.typ{
+    max-width: 22%;
+    margin: 0.2em 3% 0em 0em;
+}
+
+.mak{
+    max-width: 29%;
+    margin: 0.2em 3% 0em 0em;
+}
+
+#manytypes{
+    margin: 0.2em 40% 0em 40%;
+}
+
+#tada{
+    margin: 0.2em 36% 0em;
+}
+
+.from{
+    flex-direction: column;
+}
+
+.from button{
+    max-width: 20%;
+}
+
+#comments{
+    max-width: 40%;
+    max-height: 10%;
+    height: 10%;
+    width: 40%;
 }
