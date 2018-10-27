@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel = "stylesheet" type = "text/css" href = "html5reset-1.6.1.css">
         <link rel = "stylesheet" type = "text/css" href = "style.css">
         <title>Types</title>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <link rel = "icon" href = "images/favicon.png">
+        <script src = "scripts/jq.js"></script>
+        <script src="scripts/fontplay.js"></script>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
     </head>
     <body>
         <header>
             <nav>
                 <p><a href = "./index.html">Home</a></p>
                 <p><a href = "./history.html">History</a></p>
-                <p><a href = "./types.html">Types of Swords</a></p>
+                <p><a href = "./types.html" id = "c">Types of Swords</a></p>
                 <p><a href = "./making.html">Making a Sword</a></p>
                 <p><a href = "./feedback.html">Feedback</a></p>
             </nav>
             <h1>Types of Swords</h1>
             <h2>Confused what the different types of swords are?</h2>
+            <h3 id = "printer">WHY ARE YOU PRINTING THIS???</h3>
         </header>
         <main>
-            <div class = "typ" id = "manytypes">
+            <div id = "manytypes" class = "typ">
                 <img src = "images/types.jpg" alt = "image to show the different types of swords" />
             </div>
             <div class = "typ">
@@ -87,6 +92,15 @@
         <footer>
                 <p>All images used are the property of their respective owners. The site is &copy; to Mark Bobrovnikov, 2018 <a href = "https://www.facebook.com/markthebob" target="_blank" aria-label = "facebook link"><i class="fab fa-facebook-square"></i></a>
                 <a href = "https://www.twitch.tv/markthebob" target="_blank" aria-label = "twitch link"><i class="fab fa-twitch"></i></a></p>
+                <p>Choose a font below, style the page yourself! (Affects: This page only)</p>
+                <ul>
+                    <li id = "creepy">Creepy Font</li>
+                    <li id = "hand">Handwriting Font</li>
+                    <li id = "normal">Normal Font</li>
+                    <li id = "nostalgia">Nostalgic Font</li>
+                    <li id = "no">Bland Font</li>
+                    <li id = "why">Surprise Font</li>
+                </ul>
         </footer>
     </body>
 </html>

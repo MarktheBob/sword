@@ -24,7 +24,7 @@
     src: url(fonts/nostyle.ttf);
 }
 @font-face {
-    font-family: "why";
+    font-family: "randomness";
     src: url(fonts/why.ttf);
 }
 
@@ -38,6 +38,7 @@ p, h2, h3, button, li, td{
     font-family: "normaltext";
     font-weight: 400;
     color: white;
+    margin: 1em 0em 1em 0em;
 }
 
 body{
@@ -50,6 +51,7 @@ body{
 p{
     text-align: justify;
     font-size: 1em;
+    line-height: 1.6;
 }
 
 h1{
@@ -57,11 +59,16 @@ h1{
     font-family: "normaltitle";
     text-align: center;
     color: #eeeeee;
+    margin: 1.25em 0em 1.25em 0em;
 }
 
 h2{
     font-size: 1.5em;
     text-align: center;
+}
+
+h3{
+    font-size: 1.17em;
 }
 
 a{
@@ -72,12 +79,15 @@ a{
 nav{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0% 5% 2% 5%;
 }
 
 nav p {
     font-size: 1em;
+    text-align: center;
     font-family: "normaltitle";
+    width: 33%;
 }
 
 nav p a{
@@ -107,7 +117,7 @@ button{
 }
 
 footer{
-    max-width: 90%;
+    max-width: 100%;
 }
 
 footer p{
@@ -119,6 +129,52 @@ i{
     text-decoration: none;
     font-size: 2em;
     margin: 0.2em 0.5em 0.2em 0.5em;
+}
+
+#c{
+    text-decoration: underline !important;
+    font-weight: 700;
+}
+
+/*Text font playing*/
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+li{
+    min-width: 30%;
+    text-align: center;
+}
+
+#creepy{
+    font-family: "creepy";
+}
+
+#hand{
+    font-family: "handwrite";
+}
+
+#normal{
+    font-family: "normaltext";
+}
+
+#no{
+    font-family: "nostyle";
+}
+
+#nostalgia{
+    font-family: "nostalgia";
+    word-wrap: normal;
+}
+
+#why{
+    font-family: "normaltext";
 }
 
 /*Grid styling*/
@@ -143,34 +199,125 @@ footer{
 }
 
 /*Probably will not stay as a flex when jquery is added.*/
-
 main{
     display: flex;
+    flex-flow: column;
+}
+
+#index{
     justify-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .hist{
-    max-width: 27%;
-    margin: 0.2em 6% 0em 0em;
+    min-width: 90%;
 }
 
 .typ{
-    max-width: 22%;
-    margin: 0.2em 3% 0em 0em;
+    min-width: 90%;
+}
+
+.typ img{
+    min-width: 100%;
 }
 
 .mak{
-    max-width: 29%;
-    margin: 0.2em 3% 0em 0em;
+    min-width: 90%;
 }
 
 #manytypes{
-    margin: 0.2em 40% 0em 40%;
+    width: 75vw;
+    align-self: center;
 }
 
 #tada{
     margin: 0.2em 36% 0em;
+}
+
+#printer{
+    display: none;
+}
+
+@media only print{
+    #printer{
+        display: inherit;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    main{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .hist{
+        max-width: 40%;
+        min-width: 40%;
+    }
+
+    .typ{
+        min-width: 40%;
+        max-width: 40%;
+    }
+
+    #manytypes{
+        width: 60vw;
+        margin: 0em 10%;
+    }
+
+    .mak{
+        max-width: 40%;
+        min-width: 40%;
+    }
+
+    #tada{
+        margin: 0.2em 36% 0em;
+    }
+
+    nav p{
+        max-width: 19%;
+        width: inherit;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    li{
+        min-width: 15%;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    main{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .hist{
+        max-width: 26%;
+        min-width: 26%;
+    }
+
+    .typ{
+        min-width: 26%;
+        max-width: 26%;
+    }
+
+    #manytypes{
+        width: 30vw;
+        margin: 0.2em 30% 0em 30%;
+    }
+
+    .mak{
+        min-width: 26%;
+        max-width: 26%;
+    }
+
+    #tada{
+        margin: 0.2em 36% 0em;
+    }
 }
 
 .from{
@@ -184,6 +331,6 @@ main{
 #comments{
     max-width: 40%;
     max-height: 10%;
-    height: 4em !important;
+    height: 3em !important;
     width: 40%;
 }

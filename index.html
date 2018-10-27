@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel = "stylesheet" type = "text/css" href = "html5reset-1.6.1.css">
         <link rel = "stylesheet" type = "text/css" href = "style.css">
         <title>World of Swords</title>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <link rel = "icon" href = "images/favicon.png">
+        <script src = "scripts/jq.js"></script>
+        <script src="scripts/fontplay.js"></script>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
     </head>
     <body>
         <header>
             <nav>
-                <p><a href = "./index.html">Home</a></p>
+                <p><a href = "./index.html" id = "c">Home</a></p>
                 <p><a href = "./history.html">History</a></p>
                 <p><a href = "./types.html">Types of Swords</a></p>
                 <p><a href = "./making.html">Making a Sword</a></p>
@@ -17,8 +21,9 @@
             </nav>
             <h1>The World of the Sword</h1>
             <h2>Welcome one and all!</h2>
+            <h3 id = "printer">WHY ARE YOU PRINTING THIS???</h3>
         </header>
-        <main>
+        <main id = "index">
             <p>Many millenia ago the first human picked up a stick and used it to establish a tribe, becoming its leader. A sharp stone was used to hunt, gradually evolving into the first sword, a weapon that started shaping the world. From stone to bronze, iron to steel, the sword evolved, becoming better at the task of defending and attacking tribes and empires. This weapon is paramount to the existance of today's world and will forever be prominant in our culture.</p>
             <br>
             <p>The World of the Sword will guide you through the <a href = "./history.html">history</a> of swords from the dawn of humanity to modern days, including a timeline of famous swords.</p>
@@ -29,6 +34,15 @@
         <footer>
             <p>All images used are the property of their respective owners. The site is &copy; to Mark Bobrovnikov, 2018 <a href = "https://www.facebook.com/markthebob" target="_blank" aria-label = "facebook link"><i class="fab fa-facebook-square"></i></a>
             <a href = "https://www.twitch.tv/markthebob" target="_blank" aria-label = "twitch link"><i class="fab fa-twitch"></i></a></p>
+            <p>Choose a font below, style the page yourself! (Affects: This page only)</p>
+            <ul>
+                <li id = "creepy">Creepy Font</li>
+                <li id = "hand">Handwriting Font</li>
+                <li id = "normal">Normal Font</li>
+                <li id = "nostalgia">Nostalgic Font</li>
+                <li id = "no">Bland Font</li>
+                <li id = "why">Surprise Font</li>
+            </ul>
         </footer>
     </body>
 </html>
