@@ -9,6 +9,7 @@
         <script src = "scripts/jq.js"></script>
         <script src="scripts/fontplay.js"></script>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <script src="scripts/form.js"></script>
     </head>
     <body>
         <header>
@@ -25,12 +26,12 @@
         </header>
         <main class = "from">
             <h3>Fill out the form bellow to contact the author!</h3>
-            <p>Name: <textarea aria-label = "name"></textarea></p>
-            <p>Email: <textarea aria-label = "email"></textarea></p>
-            <p>What is three plus four? (Proof you are not a robot): <textarea aria-label = "captcha"></textarea></p>
-            <p>Comments and suggestions: <textarea id = "comments" aria-label="comment"></textarea></p>
-            <br>
-            <button>Submit</button>
+            <form action="https://formspree.io/bobrovm@umich.edu" method="POST">
+                <label>Name: <input name = "name" type="text" id = "nm" required autocomplete="off"></label><br>
+                <label>Email: <input name = "email" type="email" id = "em" required autocomplete="off"></label><br>
+                <label>Comments and suggestions: <br><textarea id = "com" name="comment" type="text" required></textarea></label><br>
+                <input type="submit" id = "butt" value = "Click to Submit">
+            </form>
         </main>
         <footer>
                 <p>All images used are the property of their respective owners. The site is &copy; to Mark Bobrovnikov, 2018 <a href = "https://www.facebook.com/markthebob" target="_blank" aria-label = "facebook link"><i class="fab fa-facebook-square"></i></a>

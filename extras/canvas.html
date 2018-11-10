@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <title>Canvas</title>
+        <style>
+            #myCanvas{
+                border: solid black 1px;
+            }        
+        </style>
+    </header>
+    <body onkeydown="uniKeyCode(event)">
+        <canvas id = "myCanvas" width = "800px" height = "500px"></canvas>
+        <span id="demo2"></span>
+
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            //setting global vars
+            var blue = "#0000ff";
+            var green = "#00ff00";
+            var red = "#ff0000";
+            var yellow = "#ffff00";
+            ctx.fillStyle = blue;
+            var radius = 10;
+            //Getting Mose Position
+            function getMousePos(canvas, evt) {
+                var rect = canvas.getBoundingClientRect();
+                return {
+                    x: evt.clientX - rect.left,
+                    y: evt.clientY - rect.top
+                };
+            }
+            //Tracking keys
+            function uniKeyCode(event) {
+                var key = event.which || event.keyCode;
+                //document.getElementById("demo2").innerHTML = "The Unicode KEY code is: " + key;
+                if (key == "82"){
+                    ctx.fillStyle = red;
+                }
+                else if(key == "71"){
+                    ctx.fillStyle = green;
+                }
+                else if(key == "66"){
+                    ctx.fillStyle = blue;
+                }
+                else if(key == "89"){
+                    ctx.fillStyle = yellow;
+                }
+                else if(key == "38"){
+                    radius+= 2;
+                }
+                else if(key == "40" && radius != 0){
+                    radius-= 2;
+                }
+                else if(key == "32"){
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                }
+            }
+            //Tracking mouse position
+            canvas.addEventListener('mousemove', function(evt) {
+                var mousePos = getMousePos(canvas, evt);
+                ctx.beginPath();
+                ctx.arc(mousePos.x,mousePos.y,radius,0,2*Math.PI);
+                ctx.fill();
+            }, false);
+            //Tracking finger position
+            canvas.addEventListener('touchmove', function(evt) {
+                var mousePos = getMousePos(canvas, evt);
+                ctx.beginPath();
+                ctx.arc(mousePos.x,mousePos.y,radius,0,2*Math.PI);
+                ctx.fill();
+            }, false);
+        </script>
+    </body>
+</html>
