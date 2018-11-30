@@ -100,6 +100,7 @@ p a{
 
 img{
     max-width: 100%;
+    color: white;
 }
 
 button{
@@ -171,22 +172,8 @@ li{
 /*Grid styling*/
 
 body{
-    display: grid;
-    grid-template-rows: 38% 60% 2%;
-    grid-template-columns: 100%;
-    margin: 0px 2% 0px 2%;
-}
-
-header{
-    grid-row: 1 / 2;
-}
-
-main{
-    grid-row: 2 / 3;
-}
-
-footer{
-    grid-row: 3 / 4;
+    display: block;
+    margin: 0em 2vw 0em 2vw;
 }
 
 /*Probably will not stay as a flex when jquery is added.*/
@@ -221,7 +208,7 @@ main{
 }
 
 #tada{
-    margin: 0.2em 36% 0em;
+    margin: 0.2em 9vw 0em;
 }
 
 #printer{
@@ -235,14 +222,36 @@ main{
 }
 
 @media only screen and (min-width: 600px){
+    body{
+        display: grid;
+        grid-template-rows: 25em auto 2%;
+        grid-template-columns: 100%;
+    }
+    
+    header{
+        grid-row: 1 / 2;
+    }
+    
+    main{
+        grid-row: 2 / 3;
+        flex-flow: row;
+        flex-wrap: wrap;
+    }
+    
+    footer{
+        grid-row: 3 / 4;
+    }
+
     .hist{
         max-width: 40%;
         min-width: 40%;
+        margin: 0px 5% 0px 5%;
     }
 
     .typ{
-        min-width: 40%;
         max-width: 40%;
+        min-width: 40%;
+        margin: 0px 5% 0px 5%;
     }
 
     #manytypes{
@@ -253,10 +262,12 @@ main{
     .mak{
         max-width: 40%;
         min-width: 40%;
+        margin: 0px 5% 0px 5%;
     }
 
     #tada{
-        margin: 0.2em 36% 0em;
+        margin: 0.2em 23vw 0em;
+        min-width: 60vw;
     }
 
     nav p{
@@ -280,13 +291,15 @@ main{
     }
 
     .hist{
-        max-width: 26%;
-        min-width: 26%;
+        max-width: 31%;
+        min-width: 31%;
+        margin: 0px 1% 0px 1%;
     }
 
     .typ{
-        min-width: 26%;
-        max-width: 26%;
+        max-width: 31%;
+        min-width: 31%;
+        margin: 0px 1% 0px 1%;
     }
 
     #manytypes{
@@ -295,8 +308,9 @@ main{
     }
 
     .mak{
-        min-width: 26%;
-        max-width: 26%;
+        max-width: 31%;
+        min-width: 31%;
+        margin: 0px 1% 0px 1%;
     }
 
     #tada{
@@ -328,4 +342,15 @@ input{
     max-height: 10%;
     height: 3.5em !important;
     width: 40%;
+}
+
+/*History page gallery styling*/
+
+.arrow{
+    display: block;
+    border: 1px solid white;
+}
+
+.arrow i{
+    padding-top: 28vh;
 }

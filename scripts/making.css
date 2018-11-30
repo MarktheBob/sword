@@ -1,0 +1,287 @@
+/*jssor slider loading skin spin css*/
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes jssorl-009-spin {
+    from {
+        transform: rotate(0deg);
+   }
+    to {
+        transform: rotate(360deg);
+   }
+}
+/*jssor slider arrow skin 106 css*/
+.jssora106 {
+   display:block;
+   position:absolute;
+   cursor:pointer;
+}
+.jssora106 .c {
+   fill:#fff;
+   opacity:.3;
+}
+.jssora106 .a {
+   fill:none;
+   stroke:#000;
+   stroke-width:350;
+   stroke-miterlimit:10;
+}
+.jssora106:hover .c {
+   opacity:.5;
+}
+.jssora106:hover .a {
+   opacity:.8;
+}
+.jssora106.jssora106dn .c {
+   opacity:.2;
+}
+.jssora106.jssora106dn .a {
+   opacity:1;
+}
+.jssora106.jssora106ds {
+   opacity:.3;
+   pointer-events:none;
+}
+/*jssor slider thumbnail skin 101 css*/
+.jssort101 .p {
+   position: absolute;
+   top:0;
+   left:0;
+   box-sizing:border-box;
+   background:#000;
+}
+.jssort101 .p .cv {
+   position:relative;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   border:2px solid #000;
+   box-sizing:border-box;
+   z-index:1;
+}
+.jssort101 .a {
+   fill:none;
+   stroke:#fff;
+   stroke-width:400;
+   stroke-miterlimit:10;
+   visibility:hidden;
+}
+.jssort101 .p:hover .cv, .jssort101 .p.pdn .cv {
+   border:none;
+   border-color:transparent;
+}
+.jssort101 .p:hover{
+   padding:2px;
+}
+.jssort101 .p:hover .cv {
+   background-color:rgba(0,0,0,6);
+   opacity:.35;
+}
+.jssort101 .p:hover.pdn{
+   padding:0;
+}
+.jssort101 .p:hover.pdn .cv {
+   border:2px solid #fff;
+   background:none;
+   opacity:.35;
+}
+.jssort101 .pav .cv {
+   border-color:#fff;
+   opacity:.35;
+}
+.jssort101 .pav .a, .jssort101 .p:hover .a {
+   visibility:visible;
+}
+.jssort101 .t {
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   border:none;
+   opacity:.6;
+}
+.jssort101 .pav .t, .jssort101 .p:hover .t{
+   opacity:1;
+}
+#jssor_1{
+   position:relative;
+   margin:0 auto;
+   top:0px;
+   left:0px;
+   width:980px;
+   height:480px;
+   overflow:hidden;
+   visibility:hidden;
+}
+.jssorl-009-spin{
+   position:absolute;
+   top:0px;
+   left:0px;
+   width:100%;
+   height:100%;
+   text-align:center;
+   background-color:rgba(0,0,0,0.7);
+}
+#moo{
+   margin-top:-19px;
+   position:relative;
+   top:50%;
+   width:38px;
+   height:38px;
+}
+#baa{
+   cursor:default;
+   position:relative;
+   top:0px;
+   left:0px;
+   width:980px;
+   height:380px;
+   overflow:hidden;
+}
+.jssort101{
+   position:absolute;
+   left:0px;
+   bottom:0px;
+   width:980px;
+   height:100px;
+   background-color:#000;
+}
+.p{
+   width:190px;
+   height:90px;
+}
+#moofish{
+   width:55px;
+   height:55px;
+   top:162px;
+   left:30px;
+}
+#moobaa{
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+}
+#baafish{
+   width:55px;
+   height:55px;
+   top:162px;
+   right:30px;
+}
+#fish{
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+}
+
+/*My styling*/
+
+#jssor_1{
+    display: none;
+}
+
+@media only screen and (min-width: 600px){
+    #jssor_1{
+        display: unset;
+    }
+
+    #small{
+        display: none;
+    }
+
+    .mak{
+        display: flex !important; 
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .mak h3{
+        margin: 0px 30% 0px 45% !important;
+        font-size: 1.5em;
+    }
+
+    .mak img{
+        max-width: 50% !important;
+        max-height: 50%;
+        margin: 0px 3% 0% 4%;
+    }
+
+    #odd1{
+        max-width: 40% !important;
+        max-height: 40%;
+        margin: 0px 2% 0% 4%;
+    }
+
+    #odd2{
+        max-width: 40% !important;
+        max-height: 40%;
+        margin: 0px 2% 0% 4%;
+    }
+
+    #odd3{
+        max-width: 40% !important;
+        max-height: 40%;
+        margin: 0px 2% 0% 5%;
+    }
+
+    .mak p{
+        font-size: 0.8em !important;
+        word-wrap: normal;
+        max-width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .mak{
+        display: flex !important; 
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .mak h3{
+        margin: 0px 30% 0px 45% !important;
+        font-size: 1.5em;
+    }
+
+    .mak img{
+        max-width: 60% !important;
+        max-height: 60%;
+        margin: 0px 5% 0% 10%;
+    }
+
+    #odd1{
+        max-width: 50% !important;
+        max-height: 50%;
+        margin: 0px 3% 0% 10%;
+    }
+
+    #odd2{
+        max-width: 50% !important;
+        max-height: 50%;
+        margin: 0px 3% 0% 10%;
+    }
+
+    #odd3{
+        max-width: 50% !important;
+        max-height: 50%;
+        margin: 0px 3% 0% 10%;
+    }
+
+    .mak p{
+        font-size: 0.6em !important;
+        word-wrap: normal;
+        max-width: 50%;
+    }
+}
+
+moo{
+    font-size: 2em;
+}
