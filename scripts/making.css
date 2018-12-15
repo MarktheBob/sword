@@ -118,6 +118,13 @@
    overflow:hidden;
    visibility:hidden;
 }
+
+@media only screen and  (max-width: 825px){
+   #jssor_1{
+      margin-top: 10vh;
+   }
+}
+
 .jssorl-009-spin{
    position:absolute;
    top:0px;
@@ -188,70 +195,90 @@
     display: none;
 }
 
+#hider{
+   display: none;
+}
+
+.small{
+   display: unset !important;
+}
+
+.hidden{
+   display: inherit;
+}
+
 @media only screen and (min-width: 600px){
     #jssor_1{
         display: unset;
     }
 
-    #small{
-        display: none;
+    #hider{
+       display: unset;
     }
 
-    .mak{
+    .small{
+       display: unset;
+    }
+
+    .hidden{
+       display: none !important;
+    }
+
+    .mak2{
         display: flex !important; 
         flex-wrap: wrap;
         flex-direction: row;
     }
 
-    .mak h3{
-        margin: 0px 30% 0px 45% !important;
+    .mak2 h3{
+        margin: 0px 50vw 0px 30vw !important;
         font-size: 1.5em;
     }
 
-    .mak img{
-        max-width: 50% !important;
-        max-height: 50%;
-        margin: 0px 3% 0% 4%;
+    .mak2 img{
+        max-width: 25vw !important;
+        max-height: 25vw;
+        margin: 0px 1.5vw 0vw 11vw;
     }
 
     #odd1{
-        max-width: 40% !important;
-        max-height: 40%;
-        margin: 0px 2% 0% 4%;
+        max-width: 25vw !important;
+        max-height: 25vw;
+        margin: 0px 2vw 0vw 11vw;
     }
 
     #odd2{
-        max-width: 40% !important;
-        max-height: 40%;
-        margin: 0px 2% 0% 4%;
+        max-width: 25vw !important;
+        max-height: 25vw;
+        margin: 0px 2vw 0vw 11vw;
     }
 
     #odd3{
-        max-width: 40% !important;
-        max-height: 40%;
-        margin: 0px 2% 0% 5%;
+        max-width: 25vw !important;
+        max-height: 25vw;
+        margin: 0px 2vw 0vw 11vw;
     }
 
-    .mak p{
-        font-size: 0.8em !important;
+    .mak2 p{
+        font-size: 0.7em !important;
         word-wrap: normal;
-        max-width: 40%;
+        max-width: 47vw;
     }
 }
 
 @media only screen and (min-width: 1200px){
-    .mak{
+    .mak2{
         display: flex !important; 
         flex-wrap: wrap;
         flex-direction: row;
     }
 
-    .mak h3{
+    .mak2 h3{
         margin: 0px 30% 0px 45% !important;
         font-size: 1.5em;
     }
 
-    .mak img{
+    .mak2 img{
         max-width: 60% !important;
         max-height: 60%;
         margin: 0px 5% 0% 10%;
@@ -275,7 +302,7 @@
         margin: 0px 3% 0% 10%;
     }
 
-    .mak p{
+    .mak2 p{
         font-size: 0.6em !important;
         word-wrap: normal;
         max-width: 50%;

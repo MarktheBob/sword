@@ -11,22 +11,24 @@
         <script src="scripts/fontplay.js"></script>
         <script src = "scripts/jssor.slider-27.5.0.min.js"></script>
         <script src = "scripts/making.js"></script>
+        <script src = "scripts/hider.js"></script>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
     </head>
     <body>
         <header>
             <nav>
-                <p><a href = "./index.html">Home</a></p>
-                <p><a href = "./history.html">History</a></p>
-                <p><a href = "./types.html">Types of Swords</a></p>
-                <p><a href = "./making.html" id = "c">Making a Sword</a></p>
-                <p><a href = "./feedback.html">Feedback</a></p>
+                <p><a href = "./index.html" tabindex="1">Home</a></p>
+                <p><a href = "./history.html" tabindex="2">History</a></p>
+                <p><a href = "./types.html" tabindex="3">Types of Swords</a></p>
+                <p><a href = "./making.html" id = "c" tabindex="4">Making a Sword</a></p>
+                <p><a href = "./feedback.html" tabindex="5">Feedback</a></p>
             </nav>
             <h1>The Making of the Sword</h1>
             <h2>The art of sword forging</h2>
             <h3 id = "printer">WHY ARE YOU PRINTING THIS???</h3>
+            <button id = "hider" tabindex="6">Click to toggle gallery view</button>
         </header>
-        <main>
+        <main tabindex="7">
             <div id="jssor_1">
                 <!-- Loading Screen -->
                 <div data-u="loading" class="jssorl-009-spin">
@@ -34,7 +36,7 @@
                 </div>
                 <div data-u="slides" id = "baa">
                     <div>
-                        <div data-u="image" class = "mak">
+                        <div data-u="image" class = "mak2">
                             <h3>Material selection</h3>
                             <img src = "images/making/heating.jpg" alt = "heating a steel ingot" />
                             <p>Selecting the material for your blade is very dependant on the type of sword you would like to make. Pick a steel that is too brittle, and your blade will snap after a couple of hits. A dense steel will make a good short sword or a sword breaker, but a claymore would be too heavy to even lift. A soft steel would do great for a bendy rapier, but would be problematic for a saber. So first decide what you would like to make, and then select the alloy. <br><br> If you desire a more historically accurate material, you can make the steel yourself. All you need is a coal furnace and some iron. But beware of adding too much carbon into the steel, it would make the material useless. <br><br> For a damascus steel look, you would need to layer soft and hard steels, before merging them into a single block. For Japanese blade forging, the hard steel would first need to be formed into a block, and then the softer steel would need to be inserted into the block.</p>
@@ -42,7 +44,7 @@
                         <img data-u="thumb" src="images/making/heating.jpg" alt = "heating a steel ingot" />
                     </div>
                     <div>
-                        <div class = "mak" data-u="image">
+                        <div class = "mak2" data-u="image">
                             <h3>Drawing out the blade</h3>
                             <img src = "images/making/drawing.jpg" alt = "drawing out a blade" />
                             <p>Once you have your block of steel, heat it to a steady red / yellow colour and start hammering away. Start at one end of the block and work your way down it. Do not try to hammer the material to the desired thickness in the first pass! Make multiple passes, slowly drawing out the metal in one direction. Keep the width roughly constant throughout the process, since the blade generally is not very wide. Reheat the metal once it losed the red colour. To make the material stronger, you can draw out the block, then fold it in half, then draw it out again. Repeat continuously until the necessaru number of layers has been formed.
@@ -51,7 +53,7 @@
                         <img data-u="thumb" src="images/making/drawing.jpg" alt = "drawing out a blade" />
                     </div>
                     <div>
-                        <div data-u="image" class = "mak">
+                        <div data-u="image" class = "mak2">
                             <h3>Rough grinding</h3>
                             <img src = "images/making/grind1.jpg" alt = "rough grinding" id  ="odd1"/>
                             <p>Once the blade has cooled down, proceed to grind the blade. Remove all black flakes that remain from forging, but do not start to polish the blade. The edges need to be roughly ground to shape, but no true edge must be put in. Remember to allow the blade to cool during grinding.
@@ -60,7 +62,7 @@
                         <img data-u="thumb" src="images/making/grind1.jpg" alt = "rough grinding" />
                     </div>
                     <div>
-                        <div data-u="image" class = "mak">
+                        <div data-u="image" class = "mak2">
                             <h3>Quenching</h3>
                             <img src = "images/making/quenching.jpg" id = "odd2" alt = "quenching a blade" />
                             <p>This is the most important part of the process. You have hammered away at the blade, distrupting the microstructures and molecular lattices inside the metal, so now is the time to organise them and set them into shape. Heat the blade to a red / orange / yellow colour and quickly dip it into oil or water. The colour and the quenching medium depend on the material used, as well as the desired characteristics of the sword. Be aware that the blade may warp during the sudden cooling, so you will only have several second to fix the bending! Do not reheat the blade, as it will ruin the quenching process.<br><br>
@@ -69,7 +71,7 @@
                         <img data-u="thumb" src="images/making/quenching.jpg" alt = "quenching a blade" />
                     </div>
                     <div>
-                        <div data-u="image" class = "mak">
+                        <div data-u="image" class = "mak2">
                             <h3>Truing and polishing</h3>
                             <img src = "images/making/grind2.JPG" id = "odd3" alt = "final grinding" />
                             <p>Now the easy part. The blade needs to be ground into final shape, the edges need to be refined and sharpened, and the whole sword needs to be polished. This process aims to refine the shape of the sword, not take away large quantities of material. For this reason the earlier grinding process is important, as taking too much material away will ruin the lattice structure of the metal. Use progressive grits to smooth all surfaces, finally getting a magnificent looking blade. If you have used different steels in the process, or would like to bring out the Damascus pattern, then dip the blade into etching acid for several minutes. This will bring out the difference between the layers.</p>
@@ -77,7 +79,7 @@
                         <img data-u="thumb" src="images/making/grind2.jpg" alt = "final grinding" />
                     </div>
                     <div>
-                        <div data-u="image" class = "mak">
+                        <div data-u="image" class = "mak2">
                             <h3>Finishing up</h3>
                             <img src = "images/making/final.jpg" alt = "finished sword" />
                             <p>All that remains is to put the handle on the sword, add some decorations like the pommel and guard, maybe even adding some gold carvings into the blade. Be creative!<br><br>
@@ -115,47 +117,45 @@
                     </svg>
                 </div>
             </div>
-            <div id = "small">
-                <div class = "mak">
-                    <h3>Material selection</h3>
-                    <img src = "images/making/heating.jpg" alt = "heating a steel ingot" />
-                    <p>Selecting the material for your blade is very dependant on the type of sword you would like to make. Pick a steel that is too brittle, and your blade will snap after a couple of hits. A dense steel will make a good short sword or a sword breaker, but a claymore would be too heavy to even lift. A soft steel would do great for a bendy rapier, but would be problematic for a saber. So first decide what you would like to make, and then select the alloy. <br><br> If you desire a more historically accurate material, you can make the steel yourself. All you need is a coal furnace and some iron. But beware of adding too much carbon into the steel, it would make the material useless. <br><br> For a damascus steel look, you would need to layer soft and hard steels, before merging them into a single block. For Japanese blade forging, the hard steel would first need to be formed into a block, and then the softer steel would need to be inserted into the block.</p>
-                </div>
-                <div class = "mak" >
-                    <h3>Drawing out the blade</h3>
-                    <img src = "images/making/drawing.jpg" alt = "drawing out a blade" />
-                    <p>Once you have your block of steel, heat it to a steady red / yellow colour and start hammering away. Start at one end of the block and work your way down it. Do not try to hammer the material to the desired thickness in the first pass! Make multiple passes, slowly drawing out the metal in one direction. Keep the width roughly constant throughout the process, since the blade generally is not very wide. Reheat the metal once it losed the red colour. To make the material stronger, you can draw out the block, then fold it in half, then draw it out again. Repeat continuously until the necessaru number of layers has been formed.
-                    <br><br>Do not forget about the tang. It is a piece of metal that is made from the same block of steel as the blade, never is it attached / welded on afterwards. It should be roughly the same thickness as the blade, to ensure that the sword does not snap at the hilt.</p>
-                </div>
-                <div class = "mak">
-                    <h3>Rough grinding</h3>
-                    <img src = "images/making/grind1.jpg" alt = "rough grinding"/>
-                    <p>Once the blade has cooled down, proceed to grind the blade. Remove all black flakes that remain from forging, but do not start to polish the blade. The edges need to be roughly ground to shape, but no true edge must be put in. Remember to allow the blade to cool during grinding.
-                    <br><br>A grinding wheel is obviously the fastest method to grind the blade into shape, but if pursuing the true methods used in the past, files can be used instead.</p>
-                </div>
-                <div class = "mak">
-                    <h3>Quenching</h3>
-                    <img src = "images/making/quenching.jpg" alt = "quenching a blade" />
-                    <p>This is the most important part of the process. You have hammered away at the blade, distrupting the microstructures and molecular lattices inside the metal, so now is the time to organise them and set them into shape. Heat the blade to a red / orange / yellow colour and quickly dip it into oil or water. The colour and the quenching medium depend on the material used, as well as the desired characteristics of the sword. Be aware that the blade may warp during the sudden cooling, so you will only have several second to fix the bending! Do not reheat the blade, as it will ruin the quenching process.<br><br>
-                    A secondary quenching can be performed on some blades by heating an oil bath and immersing the blade for several hours. However, a repeated quenching by heating the blade to red colour and then using water to cool it rapidly will render the blade useless.</p>
-                </div>
-                <div class = "mak">
-                    <h3>Truing and polishing</h3>
-                    <img src = "images/making/grind2.JPG" alt = "final grinding" />
-                    <p>Now the easy part. The blade needs to be ground into final shape, the edges need to be refined and sharpened, and the whole sword needs to be polished. This process aims to refine the shape of the sword, not take away large quantities of material. For this reason the earlier grinding process is important, as taking too much material away will ruin the lattice structure of the metal. Use progressive grits to smooth all surfaces, finally getting a magnificent looking blade. If you have used different steels in the process, or would like to bring out the Damascus pattern, then dip the blade into etching acid for several minutes. This will bring out the difference between the layers.</p>
-                </div>
-                <div class = "mak">
-                    <h3>Finishing up</h3>
-                    <img src = "images/making/final.jpg" alt = "finished sword" />
-                    <p>All that remains is to put the handle on the sword, add some decorations like the pommel and guard, maybe even adding some gold carvings into the blade. Be creative!<br><br>
-                    <b>Ta-Da! You now have made a sword!</b></p>
-                </div>
+            <div class = "mak small">
+                <h3 tabindex="8">Material selection</h3>
+                <img src = "images/making/heating.jpg" alt = "heating a steel ingot" />
+                <p>Selecting the material for your blade is very dependant on the type of sword you would like to make. Pick a steel that is too brittle, and your blade will snap after a couple of hits. A dense steel will make a good short sword or a sword breaker, but a claymore would be too heavy to even lift. A soft steel would do great for a bendy rapier, but would be problematic for a saber. So first decide what you would like to make, and then select the alloy. <br><br> If you desire a more historically accurate material, you can make the steel yourself. All you need is a coal furnace and some iron. But beware of adding too much carbon into the steel, it would make the material useless. <br><br> For a damascus steel look, you would need to layer soft and hard steels, before merging them into a single block. For Japanese blade forging, the hard steel would first need to be formed into a block, and then the softer steel would need to be inserted into the block.</p>
+            </div>
+            <div class = "mak small" >
+                <h3 tabindex="9">Drawing out the blade</h3>
+                <img src = "images/making/drawing.jpg" alt = "drawing out a blade" />
+                <p>Once you have your block of steel, heat it to a steady red / yellow colour and start hammering away. Start at one end of the block and work your way down it. Do not try to hammer the material to the desired thickness in the first pass! Make multiple passes, slowly drawing out the metal in one direction. Keep the width roughly constant throughout the process, since the blade generally is not very wide. Reheat the metal once it losed the red colour. To make the material stronger, you can draw out the block, then fold it in half, then draw it out again. Repeat continuously until the necessaru number of layers has been formed.
+                <br><br>Do not forget about the tang. It is a piece of metal that is made from the same block of steel as the blade, never is it attached / welded on afterwards. It should be roughly the same thickness as the blade, to ensure that the sword does not snap at the hilt.</p>
+            </div>
+            <div class = "mak small">
+                <h3 tabindex="10">Rough grinding</h3>
+                <img src = "images/making/grind1.jpg" alt = "rough grinding"/>
+                <p>Once the blade has cooled down, proceed to grind the blade. Remove all black flakes that remain from forging, but do not start to polish the blade. The edges need to be roughly ground to shape, but no true edge must be put in. Remember to allow the blade to cool during grinding.
+                <br><br>A grinding wheel is obviously the fastest method to grind the blade into shape, but if pursuing the true methods used in the past, files can be used instead.</p>
+            </div>
+            <div class = "mak small">
+                <h3 tabindex="11">Quenching</h3>
+                <img src = "images/making/quenching.jpg" alt = "quenching a blade" />
+                <p>This is the most important part of the process. You have hammered away at the blade, distrupting the microstructures and molecular lattices inside the metal, so now is the time to organise them and set them into shape. Heat the blade to a red / orange / yellow colour and quickly dip it into oil or water. The colour and the quenching medium depend on the material used, as well as the desired characteristics of the sword. Be aware that the blade may warp during the sudden cooling, so you will only have several second to fix the bending! Do not reheat the blade, as it will ruin the quenching process.<br><br>
+                A secondary quenching can be performed on some blades by heating an oil bath and immersing the blade for several hours. However, a repeated quenching by heating the blade to red colour and then using water to cool it rapidly will render the blade useless.</p>
+            </div>
+            <div class = "mak small">
+                <h3 tabindex="12">Truing and polishing</h3>
+                <img src = "images/making/grind2.JPG" alt = "final grinding" />
+                <p>Now the easy part. The blade needs to be ground into final shape, the edges need to be refined and sharpened, and the whole sword needs to be polished. This process aims to refine the shape of the sword, not take away large quantities of material. For this reason the earlier grinding process is important, as taking too much material away will ruin the lattice structure of the metal. Use progressive grits to smooth all surfaces, finally getting a magnificent looking blade. If you have used different steels in the process, or would like to bring out the Damascus pattern, then dip the blade into etching acid for several minutes. This will bring out the difference between the layers.</p>
+            </div>
+            <div class = "mak small">
+                <h3 tabindex="13">Finishing up</h3>
+                <img src = "images/making/final.jpg" alt = "finished sword" />
+                <p>All that remains is to put the handle on the sword, add some decorations like the pommel and guard, maybe even adding some gold carvings into the blade. Be creative!<br><br>
+                <b>Ta-Da! You now have made a sword!</b></p>
             </div>
         </main>
-        <footer>
+        <footer tabindex="14">
                 <p>All images used are the property of their respective owners. The site is &copy; to Mark Bobrovnikov, 2018 <a href = "https://www.facebook.com/markthebob" target="_blank" aria-label = "facebook link"><i class="fab fa-facebook-square"></i></a>
                 <a href = "https://www.twitch.tv/markthebob" target="_blank" aria-label = "twitch link"><i class="fab fa-twitch"></i></a></p>
-                <p>Choose a font below, style the page yourself! (Affects: This page only)</p>
+                <p>Choose a font below, style the page yourself! (Affects: This page only. Use with caution!)</p>
                 <ul>
                     <li id = "creepy">Creepy Font</li>
                     <li id = "hand">Handwriting Font</li>

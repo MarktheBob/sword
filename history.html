@@ -11,22 +11,24 @@
         <script src="scripts/fontplay.js"></script>
         <script src = "scripts/jssor.slider-27.5.0.min.js"></script>
         <script src = "scripts/making.js"></script>
+        <script src = "scripts/hider.js"></script>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
     </head>
     <body>
         <header>
             <nav>
-                <p><a href = "./index.html">Home</a></p>
-                <p><a href = "./history.html" id = "c">History</a></p>
-                <p><a href = "./types.html">Types of Swords</a></p>
-                <p><a href = "./making.html">Making a Sword</a></p>
-                <p><a href = "./feedback.html">Feedback</a></p>
+                <p><a href = "./index.html" tabindex="1">Home</a></p>
+                <p><a href = "./history.html" id = "c" tabindex="2">History</a></p>
+                <p><a href = "./types.html" tabindex="3">Types of Swords</a></p>
+                <p><a href = "./making.html" tabindex="4">Making a Sword</a></p>
+                <p><a href = "./feedback.html" tabindex="5">Feedback</a></p>
             </nav>
             <h1>History of the Sword</h1>
             <h2>From the beginning of civilisation to  modern day</h2>
             <h3 id = "printer">WHY ARE YOU PRINTING THIS???</h3>
+            <button id = "hider" tabindex="6">Click to toggle gallery view</button>
         </header>
-        <main>
+        <main tabindex="7">
             <div id="jssor_1">
                 <!-- Loading Screen -->
                 <div data-u="loading" class="jssorl-009-spin">
@@ -34,7 +36,7 @@
                 </div>
                 <div data-u="slides" id = "baa">
                     <div>
-                        <div data-u="image" class = "hist">
+                        <div data-u="image" class = "hist2">
                             <h3>The first sword</h3>
                             <img src = "images/woodsword.jpg" alt = "Prehistoric wooden sword with stone inserts" />
                             <p>The first swords were wooden with sharp stone inserts, something tribesmen used for hunting and warfare. They were basic tools with almost no cutting edge and functioned almost like clubs. They were made by hammering stones into a wooden stick, which was sometimes cut for better grip. This persisted until metals were discovered</p>
@@ -42,7 +44,7 @@
                         <img data-u="thumb" src="images/woodsword.jpg" alt = "Prehistoric wooden sword with stone inserts" />
                     </div>
                     <div>
-                        <div data-u="image" class = "hist">
+                        <div data-u="image" class = "hist2">
                             <h3>First metal weapons</h3>
                             <img src = "images/bronzesword.png" alt = "ancient bronze sword" />
                             <p>One cannot discuss swords without discussing metals. The first metals to be discovered were tin and copper. Neither were strong enoiugh to make tools, let alone weapons. Only by combining the two metals was an alloy created that would fulfill the requirements needed for the creation of the first metal sword. These were then used to form the basic kingdoms of the second millenium BC. Until the discovery of iron, this was the most prominent weapon of the times.</p>
@@ -50,7 +52,7 @@
                         <img data-u="thumb" src="images/bronzesword.png" alt = "ancient bronze sword" />
                     </div>
                     <div>
-                        <div data-u="image" class = "hist">
+                        <div data-u="image" class = "hist2">
                             <h3>Age of Iron</h3>
                             <img src = "images/oldiron.jpg" alt = "ancient iron sword" id = "odd1"/>
                             <p>In the 12th century BC iron was discovered and slowly propagated the civilisations. The initial difficulty of smelting iron, as well as more manpower needed to create a sword initially made this type of sword a rarity amongst its bronze brothers. However, since iron was much more abundant, these swords were propagating throughout the armies, eventually making it the weapon of choice around 8th century BC.
@@ -59,7 +61,7 @@
                         <img data-u="thumb" src="images/oldiron.jpg" alt = "ancient iron sword" />
                     </div>
                     <div>
-                        <div data-u="image" class = "hist">
+                        <div data-u="image" class = "hist2">
                                 <h3>Meteoric Iron</h3>
                             <img src = "images/meteoricknife.jpg" alt = "meteoric iron knife" id = "odd2"/>
                             <p>One of the earliest steels to be discovered was meteoric iron. While the name is confusing, it is still categorised as an alloy of iron, i.e. steel. Ancient Egyptians had knives made from this alloy, treating it as a gift from the Gods. Of course, such knives and items were very rare, as not every day do meteorites fall, and not all of them remain intact after impact.</p>
@@ -67,7 +69,7 @@
                         <img data-u="thumb" src="images/meteoricknife.jpg" alt = "meteoric iron knife" />
                     </div>
                     <div>
-                        <div data-u="image" class = "hist">
+                        <div data-u="image" class = "hist2">
                             <h3>Enter the Romans</h3>
                             <img src = "images/roman.jpg" alt = "roman gladius" id = "odd4" />
                             <p>Around the time of the Roman Empire blacksmiths were experimenting with metals and techniques, eventually discovering steel (an alloy of carbon and iron) and quenching (see <a href = "making.html">making</a> for a definition) amongst other things. Grinding the edges of a sword made it sharper, no longer needing a long hammering process to define the edge. Swords were becoming commonplace, each Roman legionaire posessing one. Around this time various shapes were being tested, the Roman gladius being predominant at the time, being shorter and lighter than a regular length sword.</p>
@@ -75,7 +77,7 @@
                         <img data-u="thumb" src="images/roman.jpg" alt = "roman gladius" />
                     </div>
                     <div>
-                        <div data-u="image" class = "hist">
+                        <div data-u="image" class = "hist2">
                             <h3>Middle Ages</h3>
                             <img src = "images/knightsword.jpg" alt = "templar knight sword" id = "odd3" />
                             <p>As we progress in time towards the Middle Ages, steel has replaced the brittle iron, blacksmiths have refined the methods for forging and sharpening swords, and nearly every soldier wields a steel blade. Of course, common foot soldier swords are worse than the noble swords, but they are still much better than the blades wielded by the Romans. At this time many new types of swords are introduced, from sleek shortswords to the elegant rapiers, to heavy claymores. Steel is abundant, so blacksmiths experiment with different guards, adding pommels, doing various etchings, etc. From the rich and overbearing golden swords presented to kings, to the shining cavalry sabers, to savage pirate cutlasses, the world of swords is experiencing a golden age.</p>
@@ -83,7 +85,7 @@
                         <img data-u="thumb" src="images/knightsword.jpg" alt = "templar knight sword" />
                     </div>
                     <div>
-                        <div data-u="image" class = "hist">
+                        <div data-u="image" class = "hist2">
                             <h3>Damascus Steel</h3>
                             <img src = "images/damascussteel.jpg" alt = "damascus steel sword" id = "odd5" />
                             <p>The best steel, as well as the strongest swords always came from the Near East, known as Damascus Steel. The blades had a distinct chaotic pattern of light and dark lines on them, distinguishing them from others. Up until the 17th century this steel was known throughout the world, but the secret to the making of this steel has been lost. We can replicate the chaotic pattern, but never will there be another weapon forged from true Damascus steel.</p>
@@ -91,7 +93,7 @@
                         <img data-u="thumb" src="images/damascussteel.jpg" alt = "damascus steel sword" />
                     </div>
                     <div>
-                        <div data-u="image" class = "hist">
+                        <div data-u="image" class = "hist2">
                             <h3>The Japanese culture</h3>
                             <img src = "images/katana.jpg" alt  = "japanese katana and wakizashi set" />
                             <p>We have all heard of the Japanese samurai, with their samurai swords. The Japanese weapon smithing culture is much more intricate than the European one, holding the making of a sword in much higher regard. After all, the sword is the soul of a samurai. In Japan, the main weapons were katanas, similar to the European sabers, yet thinner and with a gentle curve. Then was the supporting offhand sword called the wakizashi, and both of these came as a set, often forged at the same time. The katana's counterpart, the ninjato, was a shorter, straighter blade, often carried by ninjas on their missions. Lastly, Japan gifted the world the nodachi (sometimes called the odachi). It was a giant katana, both longer and less sharp than its smaller brother.
@@ -100,7 +102,7 @@
                         <img data-u="thumb" src="images/katana.jpg" alt = "japanese katana and wakizashi set" />
                     </div>
                     <div>
-                        <div data-u="image" class = "hist">
+                        <div data-u="image" class = "hist2">
                             <h3>Decline of the Sword</h3>
                             <img src = "images/pistol.jpeg" alt = "pistol sword" />
                             <p>As the pistol was invented, swords became more and more obsolete. Of course, it was only during the First World War did people realise that a sword is of no more use. During the Renaissance period, smiths tried to arm the riflemen better, as the musket / rifle could only be shot once ever couple of minutes. They experimented by attaching pistols to swords, sheilds, muskets, just to raise the survivability of soldiers. Of course, as the rifles became more efficient, the necessity of a blade dropped. Today, the only blades we see are wither decorational or come in form of knives and bayonets. The Sword World has finally come to an end, its place in history books and on walls of living rooms, a fitting end to a weapon that shaped the world.</p>
@@ -137,60 +139,58 @@
                     </svg>
                 </div>
             </div>
-            <div id = "small">
-                <div class = "hist">
-                    <h3>The first sword</h3>
-                    <img src = "images/woodsword.jpg" alt = "Prehistoric wooden sword with stone inserts" />
-                    <p>The first swords were wooden with sharp stone inserts, something tribesmen used for hunting and warfare. They were basic tools with almost no cutting edge and functioned almost like clubs. They were made by hammering stones into a wooden stick, which was sometimes cut for better grip. This persisted until metals were discovered</p>
-                </div>
-                <div class = "hist">
-                    <h3>First metal weapons</h3>
-                    <img src = "images/bronzesword.png" alt = "Ancient bronze sword" />
-                    <p>One cannot discuss swords without discussing metals. The first metals to be discovered were tin and copper. Neither were strong enoiugh to make tools, let alone weapons. Only by combining the two metals was an alloy created that would fulfill the requirements needed for the creation of the first metal sword. These were then used to form the basic kingdoms of the second millenium BC. Until the discovery of iron, this was the most prominent weapon of the times.</p>
-                </div>
-                <div class = "hist">
-                    <h3>Age of Iron</h3>
-                    <img src = "images/oldiron.jpg" alt = "ancient iron sword" />
-                    <p>In the 12th century BC iron was discovered and slowly propagated the civilisations. The initial difficulty of smelting iron, as well as more manpower needed to create a sword initially made this type of sword a rarity amongst its bronze brothers. However, since iron was much more abundant, these swords were propagating throughout the armies, eventually making it the weapon of choice around 8th century BC.</p>
-                    <p>It is around this time that swords became an assembly, consisting of the blade and the handle. Evidently people found it hard to grip a metal handle, hence leather cordage or wooden grips were slowly being introduced.</p>
-                </div>
-                <div class = "hist">
-                    <h3>Meteoric Iron</h3>
-                    <img src = "images/meteoricknife.jpg" alt = "meteoric iron knife" />
-                    <p>One of the earliest steels to be discovered was meteoric iron. While the name is confusing, it is still categorised as an alloy of iron, i.e. steel. Ancient Egyptians had knives made from this alloy, treating it as a gift from the Gods. Of course, such knives and items were very rare, as not every day do meteorites fall, and not all of them remain intact after impact.</p>
-                </div>
-                <div class = "hist">
-                    <h3>Enter the Romans</h3>
-                    <img src = "images/roman.jpg" alt = "roman gladius" />
-                    <p>Around the time of the Roman Empire blacksmiths were experimenting with metals and techniques, eventually discovering steel (an alloy of carbon and iron) and quenching (see <a href = "making.html">making</a> for a definition) amongst other things. Grinding the edges of a sword made it sharper, no longer needing a long hammering process to define the edge. Swords were becoming commonplace, each Roman legionaire posessing one. Around this time various shapes were being tested, the Roman gladius being predominant at the time, being shorter and lighter than a regular length sword.</p>
-                </div>
-                <div class = "hist">
-                    <h3>Middle Ages</h3>
-                    <img src = "images/knightsword.jpg" alt = "templar knight sword" />
-                    <p>As we progress in time towards the Middle Ages, steel has replaced the brittle iron, blacksmiths have refined the methods for forging and sharpening swords, and nearly every soldier wields a steel blade. Of course, common foot soldier swords are worse than the noble swords, but they are still much better than the blades wielded by the Romans. At this time many new types of swords are introduced, from sleek shortswords to the elegant rapiers, to heavy claymores. Steel is abundant, so blacksmiths experiment with different guards, adding pommels, doing various etchings, etc. From the rich and overbearing golden swords presented to kings, to the shining cavalry sabers, to savage pirate cutlasses, the world of swords is experiencing a golden age.</p>
-                </div>
-                <div class = "hist">
-                    <h3>Damascus Steel</h3>
-                    <img src = "images/damascussteel.jpg" alt = "damascus steel sword" />
-                    <p>The best steel, as well as the strongest swords always came from the Near East, known as Damascus Steel. The blades had a distinct chaotic pattern of light and dark lines on them, distinguishing them from others. Up until the 17th century this steel was known throughout the world, but the secret to the making of this steel has been lost. We can replicate the chaotic pattern, but never will there be another weapon forged from true Damascus steel.</p>
-                </div>
-                <div class = "hist">
-                    <h3>The Japanese culture</h3>
-                    <img src = "images/katana.jpg" alt  = "japanese katana and wakizashi set" />
-                    <p>We have all heard of the Japanese samurai, with their samurai swords. The Japanese weapon smithing culture is much more intricate than the European one, holding the making of a sword in much higher regard. After all, the sword is the soul of a samurai. In Japan, the main weapons were katanas, similar to the European sabers, yet thinner and with a gentle curve. Then was the supporting offhand sword called the wakizashi, and both of these came as a set, often forged at the same time. The katana's counterpart, the ninjato, was a shorter, straighter blade, often carried by ninjas on their missions. Lastly, Japan gifted the world the nodachi (sometimes called the odachi). It was a giant katana, both longer and less sharp than its smaller brother.</p>
-                    <p>Something of note is that true Japanese weapons can be identified by a wavy pattern separating the edge from the back of the blade. This separates the hard steel used for the edge from the softer and more flexible steel of the back, allowing the blade to absorb hits and shocks better.</p>
-                </div>
-                <div class = "hist">
-                    <h3>Decline of the Sword</h3>
-                    <img src = "images/pistol.jpeg" alt = "pistol sword" />
-                    <p>As the pistol was invented, swords became more and more obsolete. Of course, it was only during the First World War did people realise that a sword is of no more use. During the Renaissance period, smiths tried to arm the riflemen better, as the musket / rifle could only be shot once ever couple of minutes. They experimented by attaching pistols to swords, sheilds, muskets, just to raise the survivability of soldiers. Of course, as the rifles became more efficient, the necessity of a blade dropped. Today, the only blades we see are wither decorational or come in form of knives and bayonets. The Sword World has finally come to an end, its place in history books and on walls of living rooms, a fitting end to a weapon that shaped the world.</p>
-                </div>
+            <div class = "hist small">
+                <h3 tabindex="8">The first sword</h3>
+                <img src = "images/woodsword.jpg" alt = "Prehistoric wooden sword with stone inserts" />
+                <p>The first swords were wooden with sharp stone inserts, something tribesmen used for hunting and warfare. They were basic tools with almost no cutting edge and functioned almost like clubs. They were made by hammering stones into a wooden stick, which was sometimes cut for better grip. This persisted until metals were discovered</p>
+            </div>
+            <div class = "hist small">
+                <h3 tabindex="9">First metal weapons</h3>
+                <img src = "images/bronzesword.png" alt = "Ancient bronze sword" />
+                <p>One cannot discuss swords without discussing metals. The first metals to be discovered were tin and copper. Neither were strong enoiugh to make tools, let alone weapons. Only by combining the two metals was an alloy created that would fulfill the requirements needed for the creation of the first metal sword. These were then used to form the basic kingdoms of the second millenium BC. Until the discovery of iron, this was the most prominent weapon of the times.</p>
+            </div>
+            <div class = "hist small">
+                <h3 tabindex="10">Age of Iron</h3>
+                <img src = "images/oldiron.jpg" alt = "ancient iron sword" />
+                <p>In the 12th century BC iron was discovered and slowly propagated the civilisations. The initial difficulty of smelting iron, as well as more manpower needed to create a sword initially made this type of sword a rarity amongst its bronze brothers. However, since iron was much more abundant, these swords were propagating throughout the armies, eventually making it the weapon of choice around 8th century BC.</p>
+                <p>It is around this time that swords became an assembly, consisting of the blade and the handle. Evidently people found it hard to grip a metal handle, hence leather cordage or wooden grips were slowly being introduced.</p>
+            </div>
+            <div class = "hist small">
+                <h3 tabindex="11">Meteoric Iron</h3>
+                <img src = "images/meteoricknife.jpg" alt = "meteoric iron knife" />
+                <p>One of the earliest steels to be discovered was meteoric iron. While the name is confusing, it is still categorised as an alloy of iron, i.e. steel. Ancient Egyptians had knives made from this alloy, treating it as a gift from the Gods. Of course, such knives and items were very rare, as not every day do meteorites fall, and not all of them remain intact after impact.</p>
+            </div>
+            <div class = "hist small">
+                <h3 tabindex="12">Enter the Romans</h3>
+                <img src = "images/roman.jpg" alt = "roman gladius" />
+                <p>Around the time of the Roman Empire blacksmiths were experimenting with metals and techniques, eventually discovering steel (an alloy of carbon and iron) and quenching (see <a href = "making.html">making</a> for a definition) amongst other things. Grinding the edges of a sword made it sharper, no longer needing a long hammering process to define the edge. Swords were becoming commonplace, each Roman legionaire posessing one. Around this time various shapes were being tested, the Roman gladius being predominant at the time, being shorter and lighter than a regular length sword.</p>
+            </div>
+            <div class = "hist small">
+                <h3 tabindex="13">Middle Ages</h3>
+                <img src = "images/knightsword.jpg" alt = "templar knight sword" />
+                <p>As we progress in time towards the Middle Ages, steel has replaced the brittle iron, blacksmiths have refined the methods for forging and sharpening swords, and nearly every soldier wields a steel blade. Of course, common foot soldier swords are worse than the noble swords, but they are still much better than the blades wielded by the Romans. At this time many new types of swords are introduced, from sleek shortswords to the elegant rapiers, to heavy claymores. Steel is abundant, so blacksmiths experiment with different guards, adding pommels, doing various etchings, etc. From the rich and overbearing golden swords presented to kings, to the shining cavalry sabers, to savage pirate cutlasses, the world of swords is experiencing a golden age.</p>
+            </div>
+            <div class = "hist small">
+                <h3 tabindex="14">Damascus Steel</h3>
+                <img src = "images/damascussteel.jpg" alt = "damascus steel sword" />
+                <p>The best steel, as well as the strongest swords always came from the Near East, known as Damascus Steel. The blades had a distinct chaotic pattern of light and dark lines on them, distinguishing them from others. Up until the 17th century this steel was known throughout the world, but the secret to the making of this steel has been lost. We can replicate the chaotic pattern, but never will there be another weapon forged from true Damascus steel.</p>
+            </div>
+            <div class = "hist small">
+                <h3 tabindex="15">The Japanese culture</h3>
+                <img src = "images/katana.jpg" alt  = "japanese katana and wakizashi set" />
+                <p>We have all heard of the Japanese samurai, with their samurai swords. The Japanese weapon smithing culture is much more intricate than the European one, holding the making of a sword in much higher regard. After all, the sword is the soul of a samurai. In Japan, the main weapons were katanas, similar to the European sabers, yet thinner and with a gentle curve. Then was the supporting offhand sword called the wakizashi, and both of these came as a set, often forged at the same time. The katana's counterpart, the ninjato, was a shorter, straighter blade, often carried by ninjas on their missions. Lastly, Japan gifted the world the nodachi (sometimes called the odachi). It was a giant katana, both longer and less sharp than its smaller brother.</p>
+                <p>Something of note is that true Japanese weapons can be identified by a wavy pattern separating the edge from the back of the blade. This separates the hard steel used for the edge from the softer and more flexible steel of the back, allowing the blade to absorb hits and shocks better.</p>
+            </div>
+            <div class = "hist small">
+                <h3 tabindex="16">Decline of the Sword</h3>
+                <img src = "images/pistol.jpeg" alt = "pistol sword" />
+                <p>As the pistol was invented, swords became more and more obsolete. Of course, it was only during the First World War did people realise that a sword is of no more use. During the Renaissance period, smiths tried to arm the riflemen better, as the musket / rifle could only be shot once ever couple of minutes. They experimented by attaching pistols to swords, sheilds, muskets, just to raise the survivability of soldiers. Of course, as the rifles became more efficient, the necessity of a blade dropped. Today, the only blades we see are wither decorational or come in form of knives and bayonets. The Sword World has finally come to an end, its place in history books and on walls of living rooms, a fitting end to a weapon that shaped the world.</p>
             </div>
         </main>
-        <footer>
+        <footer tabindex="17">
                 <p>All images used are the property of their respective owners. The site is &copy; to Mark Bobrovnikov, 2018 <a href = "https://www.facebook.com/markthebob" target="_blank" aria-label = "facebook link"><i class="fab fa-facebook-square"></i></a>
                 <a href = "https://www.twitch.tv/markthebob" target="_blank" aria-label = "twitch link"><i class="fab fa-twitch"></i></a></p>
-                <p>Choose a font below, style the page yourself! (Affects: This page only)</p>
+                <p>Choose a font below, style the page yourself! (Affects: This page only. Use with caution!)</p>
                 <ul>
                     <li id = "creepy">Creepy Font</li>
                     <li id = "hand">Handwriting Font</li>

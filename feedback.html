@@ -9,34 +9,33 @@
         <script src = "scripts/jq.js"></script>
         <script src="scripts/fontplay.js"></script>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <script src="scripts/form.js"></script>
     </head>
     <body>
         <header>
             <nav>
-                <p><a href = "./index.html">Home</a></p>
-                <p><a href = "./history.html">History</a></p>
-                <p><a href = "./types.html">Types of Swords</a></p>
-                <p><a href = "./making.html">Making a Sword</a></p>
-                <p><a href = "./feedback.html" id = "c">Feedback</a></p>
+                <p><a href = "./index.html" tabindex="1">Home</a></p>
+                <p><a href = "./history.html" tabindex="2">History</a></p>
+                <p><a href = "./types.html" tabindex="3">Types of Swords</a></p>
+                <p><a href = "./making.html" tabindex="4">Making a Sword</a></p>
+                <p><a href = "./feedback.html" id = "c" tabindex="5">Feedback</a></p>
             </nav>
             <h1>Feedback</h1>
             <h2>Want to leave feedback? Or spotted a mistake?</h2>
             <h3 id = "printer">WHY ARE YOU PRINTING THIS???</h3>
         </header>
-        <main class = "from">
+        <main class = "from" tabindex="6">
             <h3>Fill out the form bellow to contact the author!</h3>
             <form action="https://formspree.io/bobrovm@umich.edu" method="POST">
-                <label>Name: <input name = "name" type="text" id = "nm" required autocomplete="off"></label><br>
-                <label>Email: <input name = "email" type="email" id = "em" required autocomplete="off"></label><br>
-                <label>Comments and suggestions: <br><textarea id = "com" name="comment" required></textarea></label><br>
-                <input type="submit" id = "butt" value = "Click to Submit">
+                <label>Name: <input name = "name" type="text" id = "nm" required autocomplete="off" tabindex="7"></label><br>
+                <label>Email: <input name = "email" type="email" id = "em" required autocomplete="off" tabindex="8"></label><br>
+                <label>Comments and suggestions: <br><textarea id = "com" name="comment" required tabindex="9"></textarea></label><br>
+                <input type="submit" id = "butt" value = "Click to Submit" tabindex="10">
             </form>
         </main>
-        <footer>
+        <footer tabindex="11">
                 <p>All images used are the property of their respective owners. The site is &copy; to Mark Bobrovnikov, 2018 <a href = "https://www.facebook.com/markthebob" target="_blank" aria-label = "facebook link"><i class="fab fa-facebook-square"></i></a>
                 <a href = "https://www.twitch.tv/markthebob" target="_blank" aria-label = "twitch link"><i class="fab fa-twitch"></i></a></p>
-                <p>Choose a font below, style the page yourself! (Affects: This page only)</p>
+                <p>Choose a font below, style the page yourself! (Affects: This page only. Use with caution!)</p>
                 <ul>
                     <li id = "creepy">Creepy Font</li>
                     <li id = "hand">Handwriting Font</li>
