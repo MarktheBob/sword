@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $(window).resize(function(){location.reload();});
     $('#creepy').click(function(){
         $('h1, p, h2, h3, button, li, td, form, label').css("font-family", '"creepy"');
     })
